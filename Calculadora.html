@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <section>
+        <h1>Calculadora</h1>
+        <input type="number" name="1N" id="1n"> <br> 
+        <br>
+        <input type="number" name="2N" id="2n"> <br>
+        <br>
+        <input type="button" value="+" onclick="Soma()">
+        <input type="button" value="-" onclick="Subtrair()">
+        <input type="button" value="*" onclick="Multiplicar()">
+        <input type="button" value="/" onclick="Dividir()"><br>
+        <br>
+        <input type="button" value="Limpar" onclick="limp()"><br>
+<br>
+        <div id="res">
+        </div>
+    </section>
+
+    
+</body>
+<script>
+function Soma(){
+        var n1 = document.getElementById('1n').value;
+        var n2 = document.getElementById('2n').value;
+        
+            var resultado = Number(n2)+ Number(n1)
+
+           res.innerHTML = `O Resultado de ${n1} + ${n2} = ${resultado}`
+        }
+function Subtrair(){
+        var n1 = document.getElementById('1n').value;
+        var n2 = document.getElementById('2n').value;
+        
+            var resultado = n1-n2
+
+           res.innerHTML = `O Resultado de ${n1} - ${n2} = ${resultado}`
+        }
+function Multiplicar(){
+        var n1 = document.getElementById('1n').value;
+        var n2 = document.getElementById('2n').value;
+        
+            var resultado = n1*n2
+
+           res.innerHTML = `O Resultado de ${n1} * ${n2} = ${resultado}`
+        }
+function Dividir(){
+        var n1 = document.getElementById('1n').value;
+        var n2 = document.getElementById('2n').value;
+        
+            var resultado = n1/n2
+
+           res.innerHTML = `O Resultado de ${n1} / ${n2} = ${resultado}`
+        }
+function limp(){
+            res.innerHTML = ' '
+        }
+
+</script>
+</html>
